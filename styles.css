@@ -409,7 +409,7 @@ header{
 .ancoraFinal{
     display: flex;
     height: 8vh;
-    width: 47vh;
+    width: 52vh;
     border-radius: 17px;
     background-color: #F57F09;
     justify-content: center;
@@ -496,7 +496,7 @@ header{
 .container-captura a{
     display: flex;
     height: 8vh;
-    width: 48vh;
+    width: 52vh;
     border-radius: 17px;
     background-color: #F57F09;
     justify-content: center;
