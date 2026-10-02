@@ -53,7 +53,7 @@ header{
 .cta{
     display: flex;
     height: 8vh;
-    width: 36vh;
+    width: 44vh;
     border-radius: 17px;
     background-color: #F57F09;
     justify-content: center;
@@ -238,9 +238,15 @@ header{
     align-items: center;
 }
 
-.princ2{
-    height: 70vh;
-    width: 90vh;
+.princ2 {
+    /* Mude de height: 70vh para min-height e height: auto */
+    min-height: 70vh;
+    height: auto; 
+    
+    /* Mude de width: 90vh para largura em porcentagem/max-width */
+    width: 90%;
+    max-width: 800px;
+    
     background-color: rgba(68, 68, 68, 0.77); 
     border-radius: 35px;
     margin-left: 10vh;
@@ -248,29 +254,31 @@ header{
     padding: 4vh;
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between; /* Mantém o botão sempre no final da caixa */
 }
 
-.princ2 h1{
+.princ2 h1 {
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: var(--primary-color);
-    font-size: 3.4em;
+    font-size: 2.5em; /* Reduzido de 3.4em para não estourar títulos longos */
+    margin-bottom: 2vh;
 }
 
-.princ2 p{
+.princ2 p {
     color: white;
     font-family: "Manrope", sans-serif;
-    font-size: 1.8em;
+    font-size: 1.7em; /* Reduzido de 1.8em para caber confortavelmente */
     line-height: 1.6;
     margin-bottom: 3vh;
 }
 
-.princ2 a{
+.princ2 a {
     display: flex;
-    height: 7vh;
+    height: 8vh;
     width: 44vh;
+    max-width: 320px; /* Em vez de 44vh */
     border-radius: 17px;
     background-color: #F57F09;
     justify-content: center;
@@ -280,7 +288,7 @@ header{
     font-style: normal;
     text-decoration: none;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.3em;
     transition: 0.5s all ease;
 }
 
@@ -400,8 +408,8 @@ header{
 
 .ancoraFinal{
     display: flex;
-    height: 7vh;
-    width: 45vh;
+    height: 8vh;
+    width: 47vh;
     border-radius: 17px;
     background-color: #F57F09;
     justify-content: center;
@@ -487,8 +495,8 @@ header{
 
 .container-captura a{
     display: flex;
-    height: 7vh;
-    width: 45vh;
+    height: 8vh;
+    width: 48vh;
     border-radius: 17px;
     background-color: #F57F09;
     justify-content: center;
